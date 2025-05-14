@@ -6,6 +6,7 @@ import HeroSection from "./components/hero-section";
 import LocationSection from "./components/location-section";
 import ServicesSection from "./components/service-section";
 import TestimonialsSection from "./components/testimonials-section";
+import WhatsAppButton from "./components/whatsapp-button";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <LocationSection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

@@ -24,7 +24,6 @@ export default function Header() {
         { name: "Sobre", href: "#about" },
         { name: "Acomodações", href: "#accommodations" },
         { name: "Serviços", href: "#services" },
-        { name: "Galeria", href: "#gallery" },
         { name: "Localização", href: "#location" },
         { name: "Contato", href: "#contact" },
     ]

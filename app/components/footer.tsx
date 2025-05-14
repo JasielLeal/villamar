@@ -26,7 +26,7 @@ export default function Footer() {
             title: "Contato",
             links: [
                 { name: "contato@villamar.com.br", href: "mailto:contato@villamar.com.br", icon: <Mail className="h-4 w-4" /> },
-                { name: "+55 84 99406-7845", href: "tel:+5511999999999", icon: <Phone className="h-4 w-4" /> },
+                { name: "+55 84 9406-7845", href: "tel:https://wa.me/558494067845", icon: <Phone className="h-4 w-4" /> },
             ],
         },
     ]
