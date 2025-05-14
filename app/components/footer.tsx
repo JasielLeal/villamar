@@ -9,17 +9,17 @@ export default function Footer() {
         {
             title: "Pousada",
             links: [
-                { name: "Sobre Nós", href: "#about" },
-                { name: "Acomodações", href: "#accommodations" },
-                { name: "Serviços", href: "#services" },
+                { name: "Sobre Nós", href: "#about", icon: '' },
+                { name: "Acomodações", href: "#accommodations", icon: '' },
+                { name: "Serviços", href: "#services", icon: '' },
             ],
         },
         {
             title: "Informações",
             links: [
-                { name: "Localização", href: "#location" },
-                { name: "Política de Reservas", href: "#" },
-                { name: "FAQ", href: "#" },
+                { name: "Localização", href: "#location", icon: '' },
+                { name: "Política de Reservas", href: "#", icon: '' },
+                { name: "FAQ", href: "#", icon: '' },
             ],
         },
         {
