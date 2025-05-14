@@ -28,7 +28,7 @@ export default function AccommodationsSection() {
                 "/suite-dupla/suite-dupla2.jpeg",
                 "/suite-dupla/suite-dupla3.jpeg",
             ],
-            amenities: ["Cama box casal", "Ventilador", "Frigobar", "Varanda", "Banheiro privativo", "Smart TV"],
+            amenities: ["Cama box casal", "Ventilador", "Varanda", "Banheiro privativo", "Smart TV"],
             icons: [<Wifi key="wifi" />, <Car key="car" />, <Tv key="tv" />, <Bath key="bath" />],
         },
         {

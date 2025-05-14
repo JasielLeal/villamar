@@ -19,7 +19,7 @@ export default function LocationSection() {
         {
             icon: <Clock className="h-6 w-6 text-blue-500" />,
             title: "Check-in / Check-out",
-            description: "Check-in: 14h / Check-out: 12h",
+            description: "Check-in: 12h / Check-out: 10h",
         },
         {
             icon: <Bus className="h-6 w-6 text-blue-500" />,
