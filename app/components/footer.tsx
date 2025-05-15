@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { Facebook, Instagram, Twitter, Mail, Phone } from "lucide-react"
+import Image from "next/image"
 
 export default function Footer() {
     const footerLinks = [
@@ -44,9 +45,12 @@ export default function Footer() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <div>
                             <Link href="/" className="inline-block mb-6">
-                                <span className="text-2xl font-bold font-poppins">
-                                    Villa<span className="text-blue-400">Mar</span>
-                                </span>
+                                <Image
+                                    src={"/logoWhite.png"}
+                                    alt="Logo da Pousada Villa Mar"
+                                    width={100}
+                                    height={50}
+                                />
                             </Link>
                             <p className="text-blue-100 mb-6 font-open-sans">
                                 Uma hospedagem acolhedora, ideal para relaxar e aproveitar o melhor da região com uma vista panorâmica encantadora

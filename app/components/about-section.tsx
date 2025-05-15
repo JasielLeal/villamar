@@ -74,15 +74,10 @@ export default function AboutSection() {
                     >
                         <h3 className="text-2xl font-bold text-gray-800 mb-6 font-poppins">Nossa História</h3>
                         <p className="text-gray-600 mb-6 font-open-sans">
-                            Fundada em 2010, a Villa Mar nasceu do sonho de criar um espaço que unisse o conforto de um lar com a
-                            beleza natural do litoral brasileiro. Localizada em uma das mais belas praias do país, nossa pousada foi
-                            cuidadosamente projetada para proporcionar uma experiência única de hospedagem.
+                            Fundada em 2013 sob o nome Flor do Caribe, a pousada passou por uma década de história recebendo hóspedes com carinho e simplicidade. Em 2023, iniciamos uma nova fase: assumimos a gestão, realizamos uma transformação completa no espaço e na proposta, e assim nasceu a Villa Mar
                         </p>
                         <p className="text-gray-600 mb-8 font-open-sans">
-                            Cada detalhe foi pensado para garantir o bem-estar dos nossos hóspedes, desde a decoração que remete à
-                            tranquilidade do mar até o atendimento personalizado que faz você se sentir em casa. Ao longo dos anos,
-                            nos tornamos referência em hospitalidade, recebendo famílias e amigos que retornam ano após ano para
-                            reviver momentos especiais.
+                            Com um novo conceito de hospedagem, a Villa Mar foi criada para oferecer uma experiência acolhedora, onde cada detalhe convida você a se sentir em casa — com o conforto, o cuidado e a autenticidade que só uma pousada familiar pode proporcionar.
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

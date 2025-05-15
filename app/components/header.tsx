@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 export default function Header() {
     const [scrolled, setScrolled] = useState(false)
@@ -45,9 +46,21 @@ export default function Header() {
                         className="flex items-center"
                     >
                         <Link href="/" className="flex items-center">
-                            <span className={`text-2xl font-bold font-poppins ${scrolled ? "text-blue-600" : "text-white"}`}>
-                                Villa<span className="text-blue-400">Mar</span>
-                            </span>
+                            {scrolled ?
+                                <Image
+                                    src="/logo.png"
+                                    alt="Logo"
+                                    width={80}
+                                    height={50}
+                                />
+                                :
+                                <Image
+                                    src="/logoWhite.png"
+                                    alt="Logo"
+                                    width={80}
+                                    height={50}
+                                />
+                            }
                         </Link>
                     </motion.div>
 
