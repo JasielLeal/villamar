@@ -92,9 +92,11 @@ export default function Header() {
                         <Button
                             className="bg-blue-500 hover:bg-blue-600 text-white"
                             size="sm"
-                            onClick={() => document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" })}
+
                         >
-                            Reserve Agora
+                            <Link href={"https://wa.me/558494067845"} target="_blank">
+                                Reserve Agora
+                            </Link>
                         </Button>
                     </motion.div>
 

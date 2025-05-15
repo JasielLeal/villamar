@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { ChevronDown } from "lucide-react"
+import Link from "next/link"
 
 export default function HeroSection() {
     const [ref, inView] = useInView({
@@ -64,7 +65,9 @@ export default function HeroSection() {
                         className="bg-blue-500 hover:bg-blue-600 text-white"
                         onClick={() => document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" })}
                     >
-                        Reserve Agora
+                        <Link href={"https://wa.me/558494067845"} target="_blank">
+                            Reserve agora
+                        </Link>
                     </Button>
                     <Button
                         size="lg"
