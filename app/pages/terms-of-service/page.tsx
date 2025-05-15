@@ -1,4 +1,4 @@
-export function TermsOfService() {
+export default function TermsOfService() {
     return (
         <>
                 
