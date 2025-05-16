@@ -7,6 +7,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 import { Wifi, Tv, Bath, ChevronLeft, ChevronRight, Car } from "lucide-react"
+import Link from "next/link"
 
 export default function AccommodationsSection() {
     const [ref, inView] = useInView({
@@ -18,6 +19,20 @@ export default function AccommodationsSection() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
     const rooms = [
+        {
+            name: "Suíte Master",
+            description:
+                "Espaçosa e sofisticada, esta suíte oferece varanda com vista privilegiada da cidade e conforto premium para relaxar em grande estilo.",
+            price: "R$ 349,99",
+            images: [
+                "/suite-master/suite-master.png",
+                "/suite-master/suite-master2.png",
+                "/suite-master/suite-master3.png",
+                "/suite-master/suite-master4.png",
+            ],
+            amenities: ["Cama queen", "Ar-condicionado", "Frigobar", "Banheiro privativo", "Varanda", "Bancada com pia flat"],
+            icons: [<Wifi key="wifi" />, <Car key="car" />, <Tv key="tv" />, <Bath key="bath" />],
+        },
         {
             name: "Suíte com Ventilador",
             description:
@@ -37,7 +52,7 @@ export default function AccommodationsSection() {
                 "Perfeita para casais, esta suíte oferece conforto e tranquilidade com vista para o jardim e todos os itens essenciais para uma estadia aconchegante.",
             price: "R$ 199,99",
             images: [
-               "/suite-dupla/suite-dupla1.png",
+                "/suite-dupla/suite-dupla1.png",
                 "/suite-dupla/suite-dupla2.png",
                 "/suite-dupla/suite-dupla3.png",
                 "/suite-dupla/suite-dupla4.png",
@@ -55,20 +70,6 @@ export default function AccommodationsSection() {
                 "/suite-tripla/suite-tripla2.png",
             ],
             amenities: ["Cama box casal", "Ar-condicionado", "Frigobar", "Banheiro privativo", "Smart TV", "Chuveiro Elétrico", "1 Cama de solteiro"],
-            icons: [<Wifi key="wifi" />, <Car key="car" />, <Tv key="tv" />, <Bath key="bath" />],
-        },
-        {
-            name: "Suíte Master",
-            description:
-                "Espaçosa e sofisticada, esta suíte oferece varanda com vista privilegiada da cidade e conforto premium para relaxar em grande estilo.",
-            price: "R$ 349,99",
-            images: [
-               "/suite-master/suite-master.png",
-                "/suite-master/suite-master2.png",
-                "/suite-master/suite-master3.png",
-                "/suite-master/suite-master4.png",
-            ],
-            amenities: ["Cama queen", "Ar-condicionado", "Frigobar", "Banheiro privativo", "Varanda", "Bancada com pia flat"],
             icons: [<Wifi key="wifi" />, <Car key="car" />, <Tv key="tv" />, <Bath key="bath" />],
         },
         {
@@ -219,10 +220,12 @@ export default function AccommodationsSection() {
                                 </p>
                             </div>
                             <Button
-                                className="bg-blue-500 hover:bg-blue-600 text-white lg:max-w-96 mt-5 "
-                                onClick={() => document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" })}
+                                className="bg-blue-500 hover:bg-blue-600 text-white lg:max-w-96 mt-5 cursor-pointer"
+                                onClick={() => window.open("https://wa.me/558494067845", "_blank")}
                             >
-                                Reservar Agora
+                                <Link href={"https://wa.me/558494067845"} target="_blank" rel="noopener noreferrer">
+                                    Reservar Agora
+                                </Link>
                             </Button>
                         </div>
 

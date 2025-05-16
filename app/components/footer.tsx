@@ -2,7 +2,8 @@
 
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Facebook, Instagram, Twitter, Mail, Phone } from "lucide-react"
+import { Instagram, Mail, Phone } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa"
 import Image from "next/image"
 
 export default function Footer() {
@@ -33,9 +34,8 @@ export default function Footer() {
     ]
 
     const socialLinks = [
-        { name: "Facebook", href: "#", icon: <Facebook className="h-5 w-5" /> },
-        { name: "Instagram", href: "#", icon: <Instagram className="h-5 w-5" /> },
-        { name: "Twitter", href: "#", icon: <Twitter className="h-5 w-5" /> },
+        { name: "WhatsApp", href: "https://wa.me/558494067845", icon: <FaWhatsapp className="h-5 w-5" /> },
+        { name: "Instagram", href: "https://www.instagram.com/villamar_bf/", icon: <Instagram className="h-5 w-5" /> },
     ]
 
     return (

@@ -1,8 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { MessageCircle } from "lucide-react"
-
+import { FaWhatsapp } from "react-icons/fa"
 export default function WhatsAppButton() {
     return (
         <motion.a
@@ -16,7 +15,7 @@ export default function WhatsAppButton() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1 }}
         >
-            <MessageCircle className="h-6 w-6" />
+            <FaWhatsapp className="h-6 w-6" />
             <span className="sr-only">WhatsApp</span>
         </motion.a>
     )
